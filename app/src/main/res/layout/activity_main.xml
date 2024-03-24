@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <!-- Row 1: Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/colorText"/>
+
+    <!-- Row 2: Dice Image -->
+    <ImageView
+        android:id="@+id/diceImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/dice_six_faces_one"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/dice_image"/>
+
+    <!-- Row 3: Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Roll Button -->
+        <Button
+            android:id="@+id/rollButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="@string/roll"
+            android:textAllCaps="false"
+            android:background="@drawable/button_states"
+            android:textColor="@android:color/white" />
+        <!-- View Rolls Button -->
+
+        <Button
+            android:id="@+id/viewRollsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="@string/view_rolls"
+            android:background="@drawable/button_states"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

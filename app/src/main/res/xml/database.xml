@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <database xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.example.assignment2_rolldiceapp"
+        android:version="1"
+       >
+
+        <!-- Define your entity tables here -->
+
+
+
+
+    </database>
+</PreferenceScreen>

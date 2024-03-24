@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Roll Dice App</string>
+    <string name="roll">Roll Dice</string>
+    <string name="record">View Rolls</string>
+    <string name="view_rolls">View Rolls</string>
+    <string name="no_rolls_message">No rolls found!</string>
+    <string name="dice_image">Dice Image Description</string>
+</resources>

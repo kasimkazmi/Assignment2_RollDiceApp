@@ -36,7 +36,6 @@ public class RollsFragment extends Fragment {
 
         // Set the RollAdapter as the adapter for the ListView
         listView.setAdapter(rollAdapter);
-
         return view;
     }
 
@@ -44,7 +43,7 @@ public class RollsFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        // Retrieve updated rolls from the database
+        // Retrieve updated rolls from  database
         Cursor cursor = DatabaseHelper.getAllRolls(getActivity());
 
         // Update the cursor in the RollAdapter to reflect the changes
